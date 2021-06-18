@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Индекс массы тела</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="root"></div>
+        <div class="main">
+            <div class="main__left">
+                <h1>Калькулятор индекса массы тела</h1>
+                <form action="" class="form">
+                    <div>
+                        <label class="form__label">Введите свой вес:</label>
+                        <input type="number" class="form__weight-input" min="10">
+                    </div>
+                    <div>
+                        <label class="form__label">Введите свой рост (см):</label>
+                        <input type="number" class="form__height-input" min="10">
+                    </div>
+                    <button class="form__btn">Узнать</button>
+                </form>
+                <h2 class="result-heading">Ваш индекс массы тела: <span class="index"></span></h2>
+
+                <div class="description main__description">
+                    <h2 class="description__heading">Таблица показателей</h2>
+                    <table class="description__table">
+                        <tr>
+                            <th>ИМТ</th>
+                            <th>Характеристика</th>
+                        </tr>
+                        <tr>
+                            <td>Меньше 16</td>
+                            <td>Выраженный дефицит массы тела</td>
+                        </tr>
+                        <tr>
+                            <td>16-18,5</td>
+                            <td>Недостаточная масса тела</td>
+                        </tr>
+                        <tr>
+                            <td>18,5—25</td>
+                            <td>Всё нормально</td>
+                        </tr>
+                        <tr>
+                            <td>25—30</td>
+                            <td>Избыточная масса тела</td>
+                        </tr>
+                        <tr>
+                            <td>30—35</td>
+                            <td>Ожирение 1 степени</td>
+                        </tr>
+                        <tr>
+                            <td>35-40</td>
+                            <td>Ожирение 2 степени</td>
+                        </tr>
+                        <tr>
+                            <td>40+</td>
+                            <td>Ожирение 3 степени</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="main__right">
+                <div class="alert main__alert">
+                    <h2 class="alert__heading">Предупреждение!</h2>
+                    <p class="alert__text">Индекс массы тела (далее - ИМТ) прежде всего используют, чтобы выяснить риски
+                        по
+                        заболеваниям.
+                        Вы не должны считать данный результат определяющим, а также не должны всецело
+                        полагаться на него без консультации с врачом.</p>
+                    <p class="alert__text">ИМТ не учитывает распределение в организме жира и мышечной массы, а ведь
+                        мышцы
+                        тоже составляют часть Вашего веса и их плотность и вес выше, чем у жира. </p>
+                    <p class="alert__text">Пожалуйста, учитывайте
+                        данный момент!</p>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.min.js"></script>
+</body>
+
+</html>
